@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import {Route, Router, Switch} from "react-router";
+import LoginPage from "./LoginPage.js"
+import {useState} from "react";
 
 function App() {
+  const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/*<Router>*/}
+        {/*<Switch>*/}
+        {/*  <Route exact={true} path={"/"}>*/}
+        {/*      <LoginPage/>*/}
+        {/*  </Route>*/}
+        {/*</Switch>*/}
+        {/*</Router>*/}
+      <button onClick={() => {
+        let newCount = count + 1
+        setCount(newCount)
+      }}>Please click me!</button>
+      {count}
     </div>
   );
 }

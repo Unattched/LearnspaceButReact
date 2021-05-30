@@ -3,6 +3,8 @@ import './App.css';
 import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import LoginPage from "./LoginPage.js"
 import firebase from "firebase";
+import HomePage from "./HomePage";
+import Form from "./Form";
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
         <Router>
             <Switch>
                 <Route exact={true} path={"/"}><LoginPage/></Route>
-                {/*<Route exact path={"/home"}></Route>*/}
+                <Route exact={true} path={"/home"}><HomePage/></Route>
+                <Route exact={true} path={"/kid"}><Form/></Route>
             </Switch>
         </Router>
     </div>

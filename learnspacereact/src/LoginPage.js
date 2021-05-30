@@ -8,10 +8,10 @@ const LoginPage = () => {
     let GoogleProvider = new firebase.auth.GoogleAuthProvider();
     return (
         <div className={"Login"}>
-            <button onClick={() => {
+            <button id="LoginButton" onClick={() => {
                 firebase.auth().signInWithPopup(GoogleProvider)
                     .then(res => {
-                        history.push("/home")
+                        history.push("/home");
                     })
                     .catch(err => {
                         console.log(err)

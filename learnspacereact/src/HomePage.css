@@ -1,0 +1,65 @@
+.HomePage {
+    color: white;
+}
+
+.navBar {
+    display: grid;
+    grid-template-columns: 200px 200px auto 200px 200px;
+    grid-template-rows: 75px;
+
+}
+
+button {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(33, 37, 43);
+    border: none;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(40, 44, 52);
+}
+
+.Account {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-end: 2;
+    grid-row-start: 1;
+}
+
+.kid1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+    grid-row-start: 1;
+}
+.kid2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 2;
+    grid-row-start: 1;
+}
+
+
+.kid4 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-end: 2;
+    grid-row-start: 1;
+}
+
+#OptionsContainer {
+    display: grid;
+    grid-template-columns: 40%;
+    grid-template-rows: 100%;
+    visibility: hidden;
+    transition-duration: 1s;
+}
+
+#OptionsMenu {
+    display: grid;
+    grid-template-columns: 30%;
+    grid-template-rows: 100px 100px 100px 100px;
+}

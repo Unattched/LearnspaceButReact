@@ -1,3 +1,27 @@
 body {
-    background: url("https://wallpaperaccess.com/full/1143632.jpg")
+    background: url("https://wallpaperaccess.com/full/1745055.jpg")
+}
+
+#LoginButton {
+    font-size: 20px;
+    font-family: Verdana, serif;
+    background-color: rgb(33, 37, 43);
+    color: white;
+    height: 100px;
+    width: 250px;
+    border: none;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#LoginButton:hover {
+   background-color: rgb(40, 44, 52)
 }

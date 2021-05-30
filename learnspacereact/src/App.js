@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import {Route, Router, Switch} from "react-router-dom";
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import LoginPage from "./LoginPage.js"
-import {useState} from "react";
 import firebase from "firebase";
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
     <div className="App">
         <Router>
@@ -18,5 +16,17 @@ function App() {
     </div>
   );
 }
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBeWfFKSI0NE6i0mgy5tamYgAwVB-rzVK8",
+    authDomain: "learnspace-da3e0.firebaseapp.com",
+    projectId: "learnspace-da3e0",
+    storageBucket: "learnspace-da3e0.appspot.com",
+    messagingSenderId: "860452864649",
+    appId: "1:860452864649:web:861d1fbff258055aef3c58",
+    measurementId: "G-HQ86WRCLLZ"
+};
+
+firebase.initializeApp(firebaseConfig);
 
 export default App;

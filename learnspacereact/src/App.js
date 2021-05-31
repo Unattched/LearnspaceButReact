@@ -13,7 +13,7 @@ function App() {
             <Switch>
                 <Route exact={true} path={"/"}><LoginPage/></Route>
                 <Route exact={true} path={"/home"}><HomePage/></Route>
-                <Route exact={true} path={"/kid"}><Form/></Route>
+                <Route exact={true} path={"/form"}><Form/></Route>
             </Switch>
         </Router>
     </div>

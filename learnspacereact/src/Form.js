@@ -1,9 +1,17 @@
 import React from "react";
+import "./Form.css";
+import {Formik} from "formik";
 
 const Form = () => {
     return (
         <div className={"Form"}>
-            LMG MOUNTED AND LOADED
+            <Formik 
+                initialValues={{name: Obi-Wan-Kenobi}}
+                onSubmit={(values) => {
+                    console.log(values);
+                }}
+            >
+            </Formik>            
         </div>
     )
 };
